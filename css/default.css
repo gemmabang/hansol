@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+*{} /*모든 태그 선택자에 적용, body는 바디프레임에만*/
+
+*{
+    outline: none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+body,h1,h2,h3,h4,h5,h6,p,dd,dl{margin:0;}
+
+body{
+    min-width:1200px;
+    color:#333;
+    font-family:'NotoSans', sans-serif;
+    font-weight:300;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'DoHyeon';
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+    color:#333; /*바디에만 주면 a는 파랑 ㅋㅋㅋ*/
+}
+
+
+.inner{
+    width:1200px;
+    margin:0 auto;  /*블록 중앙정렬은 이거밖에 없다요*/
+    
+}
+
+.cf::after{
+    content:""; /*유령용*/
+    display: block; /*유령용*/
+    clear:both; /*float 해제용*/
+}
+
+/*.cf대신 overflow:hidden 사용가능*/

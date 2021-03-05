@@ -1,0 +1,510 @@
+@charset "utf-8";
+
+/*메인슬라이더*/
+.mainSlider{
+    background: url(../images/main_img.jpg)no-repeat center center;
+    height:690px;
+    margin:0 50px; /*패딩노노-패딩주면 back 넓어짐*/
+    background-size: cover;
+    color:#fff;
+    text-align: center;
+    position: relative; /*화살표 위치때문에 쥼*/
+}
+
+.sliderTxt{padding-top:278px;}
+
+.sliderTxt h2{
+    font-size:35px;
+}
+.sliderTxt h2 span{
+    display: block;
+    margin-bottom: 15px;
+}
+.sliderTxt p{font-size:20px;}
+
+.sliderBtn{
+    width:25px;
+    height:45px;
+    background: url(../images/sp_com.png)no-repeat -128px -61px;
+    text-indent: -9999px;
+    position: absolute;
+    top:50%;
+    margin-top:-23px;
+}
+.sliderBtn a{
+    display: block;
+    height: 100%; /*영역 맞추기*/
+}
+
+.prevBtn{
+    left:30px;
+}
+.nextBtn{
+    background-position: -159px -61px;
+    /*background:url(../images/sp_com.png)no-repeat -159px -61px; 대신 [background-position]으로 사용*/
+    right:30px;
+}
+
+
+/*메인컨텐츠01*/
+
+.mainCon01{
+    text-align:center;
+    padding: 50px 0;
+}
+
+.con01List{
+    display: inline-block; /*li 부모 중앙정렬하려고*/   
+}
+.con01List a{}
+.con01List li{
+    float:left;
+    margin:0 50px;
+    font-size:13px;
+}
+.con01List li span{
+    width:64px;
+    height:52px;
+    display: block; /*인라인이라서 블록해주야 박스생김*/
+    background-image:url(../images/sp_com.png);
+    text-indent: -9999px;
+    margin-bottom:20px;
+}
+
+/*con01 hover*/
+.con01List li:hover span{
+    background-position-y: -184px;
+}
+
+.con01List li:hover .con01Icon06{
+    background-position-y: -183px;
+}
+
+.con01List li:hover p{
+    color:#2d5b79;
+}
+
+
+.con01Icon01{
+    background-position: -3px -118px;
+}
+
+.con01Icon02{
+    background-position: -74px -118px;
+}
+
+.con01Icon03{
+    background-position: -147px -118px;
+}
+
+.con01Icon04{
+    background-position: -219px -118px;
+}
+
+.con01Icon05{
+    background-position: -291px -118px;
+}
+
+.con01Icon06{
+    background-position: -362px -117px;
+}
+
+.con01List li p{}
+
+
+/*메인컨텐츠02*/
+
+.mainCon02{
+    background-color: #DFD0D1;
+    padding:50px 0;
+    margin-bottom:50px;
+        
+}
+
+.con02Tit{
+    text-align:center;
+    margin-bottom:50px; 
+}
+
+
+.con02Tit h2{
+    font-size:30px;
+    margin-bottom: 10px;
+}
+
+.con02Tit p{}
+
+.con02Box{position:relative;}
+
+.con02Box .prevBtn{left:-50px;}
+.con02Box .nextBtn{right:-50px;}
+
+
+.con02Box>div{float:left}
+
+.con02Left{position:relative;}
+.con02Left img{display: block;}
+
+.leftTxt{
+    width:240px;
+    height:100%;
+    padding:30px 15px;
+    box-sizing: border-box; 
+    /*box-sizing 패딩줬는데 박스 튀어나갈때 박스안에서 패딩주기 가능*/
+    position: absolute;
+    top:0; right:0;
+    background: rgba(0,0,0,0.5);
+    color:#fff;
+}
+
+.leftTxt h4{font-size: 14px;}
+
+.leftTxt p{
+    font-size:20px;
+    margin-top:20px;
+}
+.leftTxt p span{font-weight: bold;}
+.leftTxt .lastTxt{font-size:13px;}
+
+.moreBtn{
+    width:210px;
+    position:absolute;
+    bottom:30px;
+    /*포지션 띄우고 width:100%주면 패딩까지 포함한 크기가 됨
+    그래서 [부모넓이-패딩=값], bottom값은 상하 패딩값을 줌 */
+    border:1px solid #fff;
+    text-align: center;
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.moreBtn a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.moreBtn a{
+    color:#fff;
+    display: block;    
+}
+
+
+.con02Right{
+    background-color: #fff;
+    width:400px;
+    height: 430px;
+    padding:0 20px;
+    box-sizing: border-box; /*박스에서 흐를때!!*/
+}
+.con02Right ul{}
+.con02Right li{padding-top:22px;} /**/
+.con02Right li a{}
+.con02Right li img{
+    width:80px;
+    vertical-align: middle;/*vertical-align(세로중앙정렬)은 각 대상에 다 줘라*/
+}
+
+.listInfo{
+    display: inline-block; /*div 인라인으로 맨들어줌*/
+    vertical-align: middle; /*vertical-align은 각 대상에 다 줘라*/
+}
+
+.listInfo p{
+    font-size:14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+/*메인컨텐츠03*/
+
+.mainCon03{}
+
+.con03Grid{
+    width:285px;
+    height: 285px;
+    text-align: center;
+    background: url(../images/mainrow3_img1.jpg)no-repeat;
+    background-size: 100%;
+    float:left;
+    margin-right:20px;
+}
+
+/*호버*/
+.con03Grid p{
+    margin-top:15px;
+    display: none;
+}
+
+.con03Grid:hover p{
+    display: block;
+}
+
+.con03Grid:hover a{
+    background: rgba(45,91,121,0.5);
+    color:#fff;
+}
+
+.con03Menu02{background-image: url(../images/mainrow3_img2.jpg);}
+.con03Menu03{background-image: url(../images/mainrow3_img3.jpg);}
+            /*background:url주면 위에속성 다시 다 해줘야 됨!
+              bg-img속성은 no-repeat 노노*/
+
+.con03Menu04{
+    background:#f2f0ed;
+    /*background-color로 주면 위에 background 속성 다 먹힘*/
+    margin-right:0;    
+    padding:30px 20px;
+    box-sizing:border-box;
+    position:relative;
+} 
+
+.con03Grid a{
+    display:block;
+    height:100%;
+}
+
+.con03Grid h3{padding-top:100px;}
+
+.con03Menu04 h3{
+    padding-top:0;
+    margin-bottom:20px;
+} 
+
+.con03Menu01 h3,.con03Menu03 h3{color:#fff;}
+
+.con03Menu04 select,.con03Menu04 input,.con03Menu04 button{
+    appearance:none;    
+    -webkit-appearance:none; /*vender prefix*/
+    border:0px;
+    display:block;
+    width:100%;
+    height:45px;
+    box-sizing:border-box;
+    margin-top:10px;
+    padding:0 10px;    
+}
+
+.con03Menu04 select{
+    background: #fff url(../images/arrow.png)no-repeat 95% center;
+    /*background-color: #fff;*/
+    /*padding:0 10px;*/
+    /*border-radius: 20px;*/
+}
+
+.con03Menu04 select::-ms-expand{display:none;} /*ms화살표용*/
+
+.con03Menu04 input{
+    /*padding:0 10px;*/
+    /*border-radius: 20px;*/
+}
+.con03Menu04 button{
+    width:245px;
+    background: #2d5b79;
+    color:#fff;
+    position: absolute;
+    left:20px; bottom:30px;
+    cursor: pointer;
+}
+
+/*메인컨텐츠04*/
+
+.mainCon04{
+    margin:20px auto 50px;
+}
+
+.con04Box{
+    width:590px;
+    background: #f1efec;
+    float:left;
+    margin-right:20px;
+    
+}
+
+.con04Tit{
+    text-align: center;
+    font-size:20px;
+    height:60px;
+    line-height: 60px;
+    color:#2d5b79;
+    position:relative;
+    border-bottom:1px solid #fff;
+}
+
+.conTit h3{}
+
+.plusBtn{
+    width:32px;
+    height:32px;
+    background: #fff url(../images/sp_com.png)no-repeat -195px -59px;
+    text-indent:-9999px;
+    position:absolute;
+    right:15px; top:14px;
+    border-radius:50%;    
+}
+
+.plusBtn a{
+    display:block;
+}
+
+.con04Box ul{}
+
+.con04Box li:last-child{border:0;}
+
+.con04Box li a{}
+
+.con04Box li p{
+    font-size:14px;
+    width:100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* !!말줄임 세트!!
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+}
+
+.con04Box li span{
+    font-size:12px;
+    color:#999;
+    display: block;
+    padding:10px 0;
+    /*인라인은 상하패딩이 안되서 블록으로 만들어줌*/
+    
+}
+
+.noticeList li{
+    width:50%;
+    float:left;
+    padding:32px 20px;
+    box-sizing: border-box;
+    border-right:1px solid #fff;
+    height: 139px;
+}
+
+
+.news{margin-right:0;}
+
+.news li{
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    margin:0 15px;
+    /*or .news li에 position 삭제 후 .news li a{relative,block}해도 날짜정렬 됨*/
+    border-bottom:1px solid #fff;
+}
+
+.news li p{width:80%;} /*오른쪽 말줌임 너비*/
+
+.news li span{
+     position: absolute;
+     right:0; top:0;
+     padding:0;    
+}
+
+/*con04 hover*/
+.con04Box ul li a:hover,.news li:hover span{
+    text-decoration: underline;
+}
+/*뉴스 span은 absolute라서 hover 언더라인이 적용안되 따로 값을 줌, absolute ㅂㄷㅂㄷ*/
+
+
+
+/*메인컨텐츠05*/
+.mainCon05{
+    background: url(../images/mainrow4_bg.jpg)no-repeat center center;
+    background-size: cover;
+    /*backgournd 사이즈는 비율계산해서 줘야됨. 이미지는 100%주면 알아서 함*/
+    padding:50px 0
+}
+
+
+.con05Menu li{
+    width: 285px;
+    height: 397px;
+    float:left;
+    text-align: center;
+    /*background: url(../images/mainrow5_img1.jpg)no-repeat;*/
+    background-size: 100%;
+    /*why 100% 줌? : 상자 사이즈보다 사진이 작으면 여백이 생김, 상자에 100%맞춰주면 끗.*/
+    margin-right:20px;
+}
+
+.con05Menu li a{
+    display: block;
+    height: 100%;    
+}
+
+.con05Menu li h3{
+    padding-top:320px;
+    font-size:20px;
+}
+.con05Menu li p{font-size:14px;}
+
+
+.con05Menu01{
+    background-image: url(../images/mainrow5_img1.jpg);
+    /*background 해도 됨됨*/
+}
+.con05Menu02{
+    background-image: url(../images/mainrow5_img2.jpg);
+}
+.con05Menu03{
+    background-image: url(../images/mainrow5_img3.jpg);
+}
+li.con05Menu04 /*li.con05Menu04:띄어쓰기 안하면 li형제불러옴**하위아님*/{
+    background-image: url(../images/mainrow5_img4.jpg.jpg);
+    margin-right:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
